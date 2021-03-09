@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Python</title>
+    <link rel="stylesheet" href="../Hello.py">
+</head>
+
+<body>
+    <h1>Pheeraphon Kunmuang {{ name }} </h1>
+    Hi.This is {{ time }}.  This is recent news.
+    <ul>
+        {% for item in news_items %}
+        <li><a href="/news/{{ item.id }}/">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
